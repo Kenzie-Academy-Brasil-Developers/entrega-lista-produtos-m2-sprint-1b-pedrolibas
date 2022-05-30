@@ -125,7 +125,7 @@ function filtarProdutos(listarProdutos, secao) {
 
 function filtarProdutosBusca(listarProdutos, nome) {
     const produtosFiltrados = listarProdutos.filter((produto) => {
-        return produto.nome === nome
+        return produto.nome.toLowerCase() === nome.toLowerCase()
     })
     return produtosFiltrados;
 }
