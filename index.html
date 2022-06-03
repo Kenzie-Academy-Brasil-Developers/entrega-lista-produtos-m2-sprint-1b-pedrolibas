@@ -16,12 +16,12 @@
             <h1>Shop now</h1>
         </div>
         <div id="filters" class="filtersContainer">
-
-            <button class="estiloGeralBotoes estiloGeralBotoes--mostrarTodos">Todos Produtos</button>
-            <button class="estiloGeralBotoes estiloGeralBotoes--filtrarHortifruti">Hortifrut</button>
-            <button class="estiloGeralBotoes estiloGeralBotoes--filtrarPanificadora">Panificadora</button>
-            <button class="estiloGeralBotoes estiloGeralBotoes--filtrarLaticinios">Laticínios</button>
-
+            <div class="conteiner__button">
+                <button class="estiloGeralBotoes estiloGeralBotoes--mostrarTodos">Todos Produtos</button>
+                <button class="estiloGeralBotoes estiloGeralBotoes--filtrarHortifruti">Hortifrut</button>
+                <button class="estiloGeralBotoes estiloGeralBotoes--filtrarPanificadora">Panificadora</button>
+                <button class="estiloGeralBotoes estiloGeralBotoes--filtrarLaticinios">Laticínios</button>
+            </div>
             <div class="containerBuscaPorNome">
 
                 <input type="text" placeholder="Pesquisar por" class="campoBuscaPorNome">
@@ -32,15 +32,34 @@
     </header>
 
     <main>
-        <div class="containerPrecoTotal">
-            <img src="src/img/alert-circle.png" alt="">
-            <p>Valor total dos produtos da sessão selecionada<span id="precoTotal">00.00</span></p>
-        </div>
+        <div class="container__produtos">
+            <div class="containerListaProdutos" id="listProdutos">
+                <h2></h2>
+                <ul>
+                </ul>
+            </div>
 
-        <div class="containerListaProdutos" id="listProdutos">
-            <h2></h2>
-            <ul>
-            </ul>
+            <div class="container__carrinho">
+                <div class="titulo__carrinho">
+                    <img src="src/img/.png" alt="icone carrinho">
+                    <p>Carrinho</p>
+                </div>
+                <div class="produto__carrinho">
+                    <ul class="lista__carrinho"></ul>
+                    <img src="src/img/shopping-bag.png" alt="icone de bolsa de shopping">
+                    <p>Por enquanto não temos produtos no carrinho</p>
+                </div>
+                <div class="conteiner__total">
+                    <div class="total__quantidade">
+                        <p>Quantidade</p>
+                        <span>0</span>
+                    </div>
+                    <div class="total__soma">
+                        <p>Valor</p>
+                        <span>0</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 
