@@ -37,11 +37,13 @@ function criarCard(produto) {
 
 function criarCardImg(produto) {
     const img = document.createElement("img")
+    const div = document.createElement("div")
 
     img.src = produto.img
     img.alt = `Imagem ${produto.nome}`
 
-    return img
+    div.appendChild(img)
+    return div
 }
 
 function criarCardH3(produto) {
@@ -196,21 +198,25 @@ const btnPani = document.querySelector(".estiloGeralBotoes--filtrarPanificadora"
 const btnLat = document.querySelector(".estiloGeralBotoes--filtrarLaticinios")
 
 btnHort.addEventListener("click", () => {
+    h2.innerText = ""
     const produtoFiltrado = filtarProdutos(produtos, "Hortifruti")
     listarProdutosFiltrados(produtoFiltrado)
 })
 
 btnPani.addEventListener("click", () => {
+    h2.innerText = ""
     const produtoFiltrado = filtarProdutos(produtos, "Panificadora")
     listarProdutosFiltrados(produtoFiltrado)
 })
 
 btnLat.addEventListener("click", () => {
+    h2.innerText = ""
     const produtoFiltrado = filtarProdutos(produtos, "Laticinio")
     listarProdutosFiltrados(produtoFiltrado)
 })
 
 btnTodos.addEventListener("click", () => {
+    h2.innerText = ""
     ul.innerHTML = ""
     listarProdutos(produtos)
 })
