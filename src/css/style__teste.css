@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;1,400&display=swap');
+
+header{
+    width: 100%;
+}
+
+main{
+    height: 100%;
+}
+
+.cabecalho {
+    height: 55px;
+    width: 100%;
+    box-shadow: 0px 4px 40px -20px rgba(0, 0, 0, 0.25);
+    font-family: Poppins;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 27px;
+    letter-spacing: 0em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filtersContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.conteiner__button{
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+}
+
+.estiloGeralBotoes {
+    cursor: pointer;
+    background-color: #12B8860D;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    color: #12b886;
+    border: none;
+    border-radius: 10px;
+}
+
+.containerBuscaPorNome {
+    display: flex;
+    justify-content: flex-start;
+    width: 35%;
+}
+
+.campoBuscaPorNome {
+    border-radius: 5px 0 0 5px;
+    height: 52px;
+    width: 75%;
+    padding: 0 10px;
+    background-color: #F1F3F5;
+    border: none;
+    font-family: Poppins;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.estiloGeralBotoes--botaoBuscaPorNome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 52px;
+    width: 14%;
+    border-radius: 8px;
+    background-color: #12B886;
+    margin-left: 9px;
+}
+
+.container__produtos{
+    display: flex;
+    margin-top: 30px;
+    width: 100%;
+    height: 100%;
+}
+
+.containerListaProdutos {
+    width: 73%;
+}
+
+.containerListaProdutos h2 {
+    font-family: Poppins;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.containerListaProdutos ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.containerListaProdutos ul li {
+    width: 32%;
+    border-radius: 8px;
+    margin: 5px auto;
+    border: 1px solid transparent;
+}
+
+.containerListaProdutos ul li div {
+    width: 94%;
+    border-radius: 8px;
+    margin: 5px auto;
+}
+
+.containerListaProdutos ul li h3 {
+    font-family: Poppins;
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 8px;
+}
+
+.containerListaProdutos ul li span {
+    font-family: Poppins;
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: #868E96;
+    margin: 8px;
+}
+
+.containerListaProdutos ul ol>li {
+    font-family: Poppins;
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: #868E96;
+    margin: 8px;
+}
+
+.containerListaProdutos ul li p {
+    font-family: Poppins;
+    font-size: 0.80rem;
+    font-weight: 500;
+    margin: 8px;
+}
+
+.containerListaProdutos ul li button {
+    border: none;
+    font-family: Poppins;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #12B886;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    padding: 5px;
+}
+
+.containerListaProdutos ul>li:hover {
+   border: 1px solid #12b886;
+}
+
+.containerListaProdutos ul li button:hover {
+    background-color: #12B886;
+    color: #F1F3F5;
+}
+
+.container__carrinho {
+    width: 25%;
+    height: 60%;
+    border: 1px solid #12b886;
+    border-radius: 12px;
+    margin-top: 5px;
+}
+
+.titulo__carrinho {
+    width: 100%;
+    height: 50px;
+    background: #12B886;
+    border-radius: 12px 12px 0px 0px;
+    display: flex;
+    align-items: center;
+}
+
+.titulo__carrinho>img {
+    margin-left: 10px;
+}
+
+.titulo__carrinho>p {
+    font-family: Poppins;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+    margin-left: 10px;
+}
+
+.produto__carrinho {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 55%;
+    background-color: #F8F9FA;
+}
+
+.cheio {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    height: 55%;
+    background-color: #F8F9FA;
+}
+
+.lista__carrinho li {
+    display: flex;
+    margin: 5px;
+    height: 35%;
+}
+
+.lista__carrinho li img {
+    height: 100%;
+    border-radius: 8px;
+}
+
+.lista__carrinho li div h3 {
+    font-family: Poppins;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.lista__carrinho li div span {
+    font-family: Poppins;
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: #868E96;
+}
+
+.lista__carrinho li div p {
+    font-family: Poppins;
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: #212529;
+}
+
+.btn {
+    border: none;
+    font-family: Poppins;
+    font-size: 0.680rem;
+    font-weight: 400;
+    color: #000;
+    cursor: pointer;
+    background-color: transparent;
+    padding: 0;
+}
+
+.btn:hover {
+    color: rgba(255, 0, 0, 0.507);
+    text-decoration: underline;
+}
+
+.produto__carrinho>p {
+    font-family: Poppins;
+    font-size: 0.875rem;
+    font-weight: 400;
+    margin-left: 10px;
+}
+
+.lista__carrinho {
+    overflow-y: scroll;
+    width: 100%;
+}
+
+.lista__carrinho li div {
+    margin-left: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.conteiner__total{
+    height: 13%;
+}
+
+.conteiner__total p,
+span,
+div {
+    font-family: Poppins;
+    font-size: 0.75rem;
+    font-weight: 500;
+    background-color: #F8F9FA;
+}
+
+.total__soma,
+.total__quantidade {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+@media screen and (max-width: 1200px){
+    .containerListaProdutos ul li{
+        min-width: 278px;
+    }
+}
+
+@media screen and (max-width: 930px){
+    .conteiner__button{
+        min-width: 370px;
+    }
+}
+
+@media screen and (max-width: 575px){
+    .filtersContainer{
+        flex-wrap: wrap;
+    }
+
+    .conteiner__button{
+        width: 100%;
+        min-width: 0px;
+        overflow-x: scroll;
+        justify-content: flex-start;
+    }
+
+    .containerBuscaPorNome{
+        width: 100%;
+        margin-top: 10px;
+        justify-content: space-between;
+    }
+
+    .containerListaProdutos{
+        width: 100%;
+    }
+
+    .containerListaProdutos ul ol {
+        visibility: hidden;
+        position: absolute;
+    }
+    .containerListaProdutos ul {
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        width: 100%;
+    }
+
+    .container__produtos {
+        margin-top: 5px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .containerListaProdutos ul{
+        justify-content: flex-start;
+    }
+
+    .containerListaProdutos ul li {
+        width: 32%;
+    }
+
+    .container__carrinho{
+        width: 100%;
+    }
+
+    .containerListaProdutos ul li div {
+        border-radius: 8px;
+        margin: 0px;
+    }
+
+    .estiloGeralBotoes{
+        margin-left: 10px;
+    }
+
+    .total__soma{
+        margin-top: -7px;
+    }
+}

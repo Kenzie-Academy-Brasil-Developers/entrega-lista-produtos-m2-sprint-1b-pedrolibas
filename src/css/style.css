@@ -20,6 +20,10 @@
     margin-left: 146px;
 }
 
+.conteiner__button{
+    display: flex;
+}
+
 .estiloGeralBotoes {
     Padding: 14px, 26px, 14px, 26px;
     cursor: pointer;
